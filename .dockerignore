@@ -1,0 +1,16 @@
+.git
+.alcor
+.claude
+.codex
+.superpowers
+.playwright-cli
+docs
+output
+node_modules
+dist
+build
+*.log
+*.tmp
+*.bak
+__pycache__
+*.pyc

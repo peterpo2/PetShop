@@ -64,6 +64,26 @@ Then open:
 http://localhost:4173
 ```
 
+## Docker
+
+Build and run with Docker Compose:
+
+```powershell
+docker compose up --build -d
+```
+
+Then open:
+
+```text
+http://localhost:8091
+```
+
+Stop the container:
+
+```powershell
+docker compose down
+```
+
 ## Build
 
 No build step is required for the current static version.

@@ -1,0 +1,9 @@
+services:
+  petshop-site:
+    build:
+      context: .
+    image: petshop-site:latest
+    container_name: petshop-site
+    ports:
+      - "8091:80"
+    restart: unless-stopped
