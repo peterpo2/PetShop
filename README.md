@@ -50,13 +50,27 @@ Unless requirements change, build the first version as a static website:
 - `docs/ai/HOOKS.md` - hook behavior and troubleshooting
 - `docs/deployment/CONTABO_VPS.md` - deployment notes
 
+## Local Preview
+
+This is currently a static website. Open `index.html` directly, or serve the folder locally:
+
+```powershell
+python -m http.server 4173
+```
+
+Then open:
+
+```text
+http://localhost:4173
+```
+
 ## Build
 
-Not implemented yet.
+No build step is required for the current static version.
 
 ## Test
 
-Not implemented yet.
+No automated test runner is configured yet. Minimum manual checks are mobile width, desktop width, CTA links, keyboard focus, and console errors.
 
 ## Git Hygiene
 

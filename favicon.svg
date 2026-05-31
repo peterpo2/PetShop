@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ЗОО БАКАЛИЯ">
+  <rect width="64" height="64" rx="8" fill="#ffd41f"/>
+  <path fill="#053b8b" d="M19 27c-3 0-6-3-6-8 0-6 3-10 7-10 5 0 8 5 9 13-3 1-6 3-10 5Zm26 0c3 0 6-3 6-8 0-6-3-10-7-10-5 0-8 5-9 13 3 1 6 3 10 5Z"/>
+  <path fill="#053b8b" d="M32 18c12 0 19 8 19 20 0 10-8 17-19 17s-19-7-19-17c0-12 7-20 19-20Z"/>
+  <path fill="#ffd41f" d="M32 23c9 0 14 6 14 15 0 7-6 12-14 12s-14-5-14-12c0-9 5-15 14-15Z"/>
+  <circle cx="25" cy="35" r="3" fill="#053b8b"/>
+  <circle cx="39" cy="35" r="3" fill="#053b8b"/>
+  <path fill="#df1f2d" d="M28 40c0-2 2-3 4-3s4 1 4 3-2 4-4 4-4-2-4-4Z"/>
+</svg>
