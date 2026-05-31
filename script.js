@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
+const mobileCta = document.querySelector(".mobile-cta");
 const year = document.querySelector("[data-year]");
 
 if (year) {
@@ -27,7 +28,25 @@ nav?.addEventListener("click", (event) => {
 
 window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 8);
+  mobileCta?.classList.toggle("is-visible", window.scrollY > 420);
 }, { passive: true });
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeNav();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!document.body.classList.contains("nav-open")) {
+    return;
+  }
+
+  const target = event.target;
+  if (target instanceof Node && !nav?.contains(target) && !navToggle?.contains(target)) {
+    closeNav();
+  }
+});
 
 const revealItems = document.querySelectorAll(".reveal");
 

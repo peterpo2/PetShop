@@ -820,6 +820,10 @@ h3 {
   background: rgba(255, 255, 255, .94);
   box-shadow: 0 12px 34px rgba(6, 40, 95, .2);
   backdrop-filter: blur(14px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(100% + 20px));
+  transition: opacity 180ms ease, transform 180ms ease;
 }
 
 .mobile-cta a {
@@ -931,11 +935,20 @@ h3 {
   }
 
   .hero {
-    padding-top: 42px;
+    padding-top: 34px;
+  }
+
+  .hero-grid {
+    gap: 28px;
+  }
+
+  .hero-card {
+    padding: 12px;
   }
 
   .button-row {
     flex-direction: column;
+    gap: 10px;
   }
 
   .button {
@@ -968,6 +981,12 @@ h3 {
 
   .mobile-cta {
     display: grid;
+  }
+
+  .mobile-cta.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
 
