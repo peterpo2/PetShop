@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "name": "Generic AlcorAI Project",
+  "items": [
+    { "id": "project.agents", "label": "Project AGENTS.md", "source": "AGENTS.md", "target": "AGENTS.md", "kind": "file", "required": true, "fixable": true },
+    { "id": "project.claude", "label": "Project CLAUDE.md", "source": "CLAUDE.md", "target": "CLAUDE.md", "kind": "file", "required": true, "fixable": true },
+    { "id": "project.claude.settings", "label": "Claude settings", "source": ".claude/settings.json", "target": ".claude/settings.json", "kind": "file", "required": true, "fixable": true },
+    { "id": "project.alcor.install", "label": "AlcorAI bootstrap script", "source": ".alcor/install.ps1", "target": ".alcor/install.ps1", "kind": "file", "required": true, "fixable": true },
+    { "id": "project.alcor.manifest", "label": "AlcorAI project manifest", "source": ".alcor/manifest.json", "target": ".alcor/manifest.json", "kind": "file", "required": true, "fixable": true }
+  ]
+}

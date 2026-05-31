@@ -1,0 +1,15 @@
+.superpowers/
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+*.swp
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ЗОО БАКАЛИЯ - визуални посоки</title>
+  <style>
+    :root {
+      --yellow: #ffd421;
+      --cream: #fff8df;
+      --blue: #063b89;
+      --red: #d71920;
+      --ink: #252525;
+      --muted: #686868;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #f5f1e8;
+      color: var(--ink);
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--blue);
+      font-size: clamp(30px, 5vw, 54px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 14px 0 28px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid rgba(6, 59, 137, .14);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 18px 45px rgba(28, 28, 28, .08);
+    }
+
+    .mock {
+      position: relative;
+      min-height: 310px;
+      padding: 18px;
+    }
+
+    .nav {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 900;
+    }
+
+    .small {
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 9px 12px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-blue {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--blue);
+    }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--blue);
+    }
+
+    .body {
+      padding: 18px;
+    }
+
+    .body h2 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 22px;
+    }
+
+    .body p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .hero-title {
+      margin-top: 34px;
+      max-width: 360px;
+      font-size: 36px;
+      line-height: 1.02;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 330px;
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .emoji {
+      position: absolute;
+      right: 22px;
+      bottom: 18px;
+      font-size: 58px;
+    }
+
+    @media (max-width: 920px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Визуална посока за сайта</h1>
+    <p class="subtitle">Три възможни посоки за one page сайта на „ЗОО БАКАЛИЯ“. Кажи ми A, B или C, или какво да смесим.</p>
+
+    <section class="grid" aria-label="Визуални посоки">
+      <article class="card">
+        <div class="mock" style="background: var(--yellow);">
+          <div class="nav" style="color: var(--blue);">
+            <span>ЗОО БАКАЛИЯ</span>
+            <span class="small">☰</span>
+          </div>
+          <div class="hero-title" style="color: var(--blue);">Всичко за твоя опашатко</div>
+          <div class="hero-copy">Квартален зоо магазин с грижа, съвет и подбран асортимент.</div>
+          <div class="cta-row">
+            <span class="btn btn-red">Обади се</span>
+            <span class="btn btn-white">Локация</span>
+          </div>
+          <div class="emoji">🐶</div>
+        </div>
+        <div class="body">
+          <h2>A. Ярка и запомняща се</h2>
+          <p>Максимално използва жълтото от логото. Весела и лесно разпознаваема, но може да бъде по-интензивна на мобилен екран.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="mock" style="background: var(--cream);">
+          <div class="nav" style="color: var(--blue);">
+            <span>ЗОО БАКАЛИЯ</span>
+            <span class="small" style="color: var(--red);">088 828 4284</span>
+          </div>
+          <div style="display:grid; grid-template-columns:1.1fr .9fr; gap:12px; margin-top:30px; align-items:center;">
+            <div>
+              <div style="font-size:32px; line-height:1.08; font-weight:950;">Малък магазин с голяма грижа</div>
+              <div class="hero-copy">Храни, лакомства и аксесоари близо до дома.</div>
+              <div class="cta-row">
+                <span class="btn btn-blue">Виж адреса</span>
+              </div>
+            </div>
+            <div style="background:var(--yellow); border:3px solid var(--blue); border-radius:8px; aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:58px;">🐾</div>
+          </div>
+        </div>
+        <div class="body">
+          <h2>B. Топла и професионална</h2>
+          <p>Балансирана палитра с кремав фон, синьо за доверие и жълто като силен акцент. Това е моето препоръчано направление.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="mock" style="background: var(--blue);">
+          <div class="nav" style="color: var(--yellow);">
+            <span>ЗОО БАКАЛИЯ</span>
+            <span class="small">Начало · Контакти</span>
+          </div>
+          <div style="margin-top:32px; background:var(--cream); border-radius:8px; padding:18px; box-shadow:0 16px 32px rgba(0,0,0,.22);">
+            <div style="font-size:30px; line-height:1.08; font-weight:950; color:var(--blue);">Качествена грижа, близо до дома</div>
+            <div class="hero-copy">Подбрани продукти за кучета, котки и други домашни любимци.</div>
+            <div class="cta-row">
+              <span class="btn btn-red">Обади се</span>
+              <span class="btn btn-yellow">Продукти</span>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <h2>C. По-контрастна и градска</h2>
+          <p>Синьото доминира, жълтото става акцент. Изглежда по-сериозно, но е по-далеч от топлата квартална атмосфера.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
